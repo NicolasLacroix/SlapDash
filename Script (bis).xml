@@ -1,0 +1,511 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!-- Script pour SlapDash-->
+
+<Main>
+
+	<part1>
+		<!-- Fond à afficher -->
+		<background>Transition_foret1</background>
+		<!-- Texte à afficher -->
+		<text>Bienvenue dans Slapdash !</text>
+		<text>Vous arrivez à point nommé, nous avons besoin d’un héros comme vous.</text>
+		<text>Vous avez été choisis (et vous n’avez pas le choix), pour accomplir une destinée incroyable, une épopée fantastique, une aventure semée d’embûches…</text>
+		<text>Bref, allons-y!</text>
+			<!-- Mini jeu à lancer -->
+		<game>None</game>
+	</part1>
+
+	<part2>
+		<!-- Fond à afficher -->
+		<background>Transition_foret2</background>
+		<!-- Texte à afficher -->
+		<text>Tandis que vous cherchez le sens de votre quête, vous vous perdez dans la foret.</text>
+		<text>Ne renoncez pas tout de suite ! Voilà qu’accourt vers vous un lutin qui semble vraiment pressé de vous parler.</text>
+		<text>A bout de souffle il s’adresse à vous.</text>
+		<text>-M’sieur le héros ! On a besoin de vous de toute urgence !!</text>
+		<text>« -L’épée… L’épée légendaire a été volée par le Boss Final, il n’y a que vous qui puissiez la récupérer ! »</text>
+		<text>« Je dois tout de suite vous emmener à la ville, le Roi doit connaitre la cachette de ce malfrat. Suivez-moi ! »</text>
+		<text> Vous ne pouvez dire non à ce petit lutin vous demandant si désespérément de l’aider. Cette épée a l’air vraiment importante.</text>
+		<text>Vous acceptez donc de le suivre, ne sachant pas vraiment ou cette histoire va vous emmener.</text>
+			<!-- Mini jeu à lancer -->
+		<game>None</game>
+	</part2>
+
+	<part3>
+		<!-- Fond à afficher -->
+		<background>Transition_portes</background>
+		<!-- Texte à afficher -->
+		<text>Vous arrivez avec le petit être devant de grandes portes gardées par deux soldats en armure. Le lutin semble alors plus rassuré.</text>
+		<text>« -Nous voilà au village, entrons ! »</text>
+		<text>Alors que vous vous approchez les gardes vous arrêtent.</text>
+		<text>-Nous sommes en période de crise, l’épée légendaire a été volée, le périmètre autour de la ville est donc bouclé tant que nous n’avons pas mis la main sur le coupable.</text>
+		<text>-Personne ne sort, personne ne rentre, ce sont les ordres! Circulez ! </text>
+		<text>Vous êtes décontenancé, ne vous attendant pas à rencontrer des obstacles si tôt dans cette aventure.</text>
+		<text>Votre nouvel ami insiste.</text>
+		<text>« -Mais c’est le Héros qui doit chercher l’épée, il faut que vous nous laissiez passer ! » </text>
+		<text> « -Pour prouver qu’il est vraiment celui qu’il prétend être, il va devoir nous battre en duel ! »</text>
+			<!-- Mini jeu à lancer -->
+		<game>PFC\PFC.py</game>
+	</part3>
+
+	<PartA>
+
+		<part1>
+			<!-- Fond à afficher -->
+			<background>Salletrone</background>
+			<!-- Texte à afficher -->
+			<text>Grace à vos talent naturel de héros vous avez réussi à battre les gardes qui, non seulement vous ont ouvert les porte du village mais vous ont également guidé jusqu’à la salle du trône. Finalement Votre quête se présente bien ! </text>
+			<text>Arrivés devant le roi, le lutin vous présente au roi comme étant ce fameux héros venu chercher l’épée. Celui-ci semble enthousiasmé par votre venue.</text>
+			<text>« -Nous n’avons plus de temps à perdre ! Je vais vous accompagner dans l’antre du Boss Final et nous récupéreront cette épée »</text>
+			<text>Heureux de ne pas avoir à affronter le voleur seul, vous restez quand même ignorant.</text>
+			<text>Pourquoi cette épée est-elle si importante ?, vous demandez vous. </text>
+			<text>« -Elle est légendaire, n’est-ce pas une raison suffisante ? » </text>
+			<text>Cette remarque du roi qui semblait être une évidence pour lui vous laisse perplexe. Mais il vous faut continuer l’histoire !</text>
+			<!-- Mini jeu à lancer -->
+			<game>None</game>
+		</part1>
+
+		<part2>
+			<!-- Fond à afficher -->
+			<background>Transition_foret3A</background>
+			<text>Une fois que vous avez quitté le village, le Roi vous guide vers l’Antre du Boss Final, qui se trouvait être dans une grotte au fin fond de la foret. Le lutin s’arrête alors.</text>
+			<text>« -Je ne peux pas vous suivre jusqu’au Boss Final, il est trop fort pour moi. »</text>
+			<text>« J’ai rempli ma mission, je compte sur vous maintenant ! »</text>
+			<text>Vous vous étiez attaché à ce petit être, vous acquiescez donc  un peu ému avant de reprendre la route.</text>
+			<text>Il vous faut réussir pour ne pas le décevoir !</text>
+			<!-- Mini jeu à lancer -->
+			<game>None</game>
+		</part2> 
+
+		<part3>
+			<!-- Fond à afficher -->
+			<background>Grotte</background>
+			<text>« -Nous voilà dans son antre ! »</text>
+			<text>En effet après avoir traversé la foret, vous et votre partenaire vous retrouvez dans une grotte sombre.</text>
+			<text>Cependant après avoir un peu avancé, vous vous retrouvez devant deux chemins identiques.</text>
+			<text>« -Par où allons-nous ? »</text>
+			<!-- Mini jeu à lancer -->
+			<game>Choice</game>
+		</part3>
+
+		<!-->Grotte_Choix</!-->
+
+		<Gauche>
+			
+			<part1>
+				<!-- Fond à afficher -->
+				<background>Grotte</background>
+				<text>Vous choisissez d’aller à gauche. Cependant au bout de quelque minute de marche, vous sentez un tremblement.</text>
+				<text>S’en suit une chute de pierres devant et derrière vous.</text>
+				<text>« -Nous sommes bloqués ! C’est sans doute un piège du Boss Final. Nous devons débloquer le passage pour passer.»</text>
+				<!-- Mini jeu à lancer -->
+				<game>Esquive\Esquive.py</game>
+			</part1>
+
+			<PartA1>
+				
+				<part1>
+					<!-- Fond à afficher -->
+					<background>bossA</background>
+					<text>La salle du Boss était éclairée par des flammes entourant le trône ou était assis le voleur de l’épée.</text>
+					<text>« -Vous avez peut-être réussit à arriver jusqu’à moi mais je ne vous laisserez pas l’épée ».</text>
+					<text>Sa voix était sombre et puissance, vous n’allez pas réussir à le convaincre par le dialogue c’est certain. Votre partenaire fait un pas en avant résolu.</text>
+					<text>« -Nous nous battrons pour la récupérer ! »</text>
+					<text>Le Boss Final ricana, l'air surpris.</text>
+					<text>« -Alors approchez ! »</text>
+					<!-- Mini jeu à lancer -->
+					<game>Simon\Simon.py</game>
+				</part1>
+
+				<PartA11>
+
+					<part1>
+						<!-- Fond à afficher -->
+						<background>bonnefinA</background>
+						<text>Vous avez battus le Boss Final ! Vous rentrez au village victorieux avec l’épée et le voleur vaincu.</text>
+						<text>Vous rendez l’épée au Roi, très satisfait, qui en récompense vous nomme chevalier de sa garde royale.</text>
+						<text>Vous avez accomplis votre destiné, et tout est bien qui finit bien.</text>
+						<!-- Mini jeu à lancer -->
+						<game>None</game>
+					</part1>
+
+				</PartA11>
+
+				<PartA12>
+
+					<part1>
+						<!-- Fond à afficher -->
+						<background>MauvaisefinA</background>
+						<text>Le Boss Final était trop puissant pour vous, vous n’avez pas réussi à le battre.</text>
+						<text>Par conséquent vous êtes condamnés, vous et votre partenaire, à être les serviteurs de celui-ci jusqu’à la fin des temps.</text>
+						<text>Peut être n’étiez-vous pas le Héros que nous attendions tant ?</text>
+						<text>Heureusement que nous sommes dans un jeu vidéo et que vous pouvez recommencer la partie pour essayer de gagner !</text>
+						<!-- Mini jeu à lancer -->
+						<game>None</game>
+					</part1>
+
+				</PartA12>
+
+			</PartA1>
+
+			<!--></!-->
+
+			<PartA2>
+
+				<part1>
+					<!-- Fond à afficher -->
+					<background>prisonA</background>
+					<text>Sous vos pas, une trappe s’ouvre et vous tombez, vous et votre partenaire, dans un cachot. Impossible d’ouvrir la porte, vous êtes prisonniers.</text>
+					<text>Votre situation semble désespérée. Etes-vous vraiment le Héros qui doit sauver le destin de ce monde ?</text>
+					<text>Tandis que vous vous apitoyez sur votre sort, le Roi lui, ne perd pas espoir.</text>
+					<text>« - Ressaisissez-vous !  Nous allons nous en sortir ! »</text>
+					<text>Celui-ci s’approche de la serrure et pose ses mains sur celle-ci. Une lumière éclaire alors les mains du Roi et la porte s’ouvre.</text>
+					<text>« -Désolé de ne pas vous avoir dit avant que je maitrisais la magie. Nous pouvons sortir à présent ! »</text>
+					<text>La magie du scénario semblant être de votre côté, vous reprenez espoir vous dirigez vers la salle du Boss Final. </text>
+					<!-- Mini jeu à lancer -->
+					<game>None</game>
+				</part1>
+
+				<part2>
+					<!-- Fond à afficher -->
+					<background>bossA</background>
+					<text>La salle du Boss était éclairée par des flammes entourant le trône ou était assis le voleur de l’épée.</text>
+					<text>« -Vous avez peut-être réussit à arriver jusqu’à moi mais je ne vous laisserez pas l’épée ».</text>
+					<text>Sa voix était sombre et puissance, vous n’allez pas réussir à le convaincre par le dialogue c’est certain. Votre partenaire fait un pas en avant résolu.</text>
+					<text>« -Nous nous battrons pour la récupérer ! »</text>
+					<text>Le Boss Final ricana, l'air surpris.</text>
+					<text>« -Alors approchez ! »</text>
+					<!-- Mini jeu à lancer -->
+					<game>Simon\Simon.py</game>
+				</part2>
+
+				<PartA21>
+
+					<part1>
+						<!-- Fond à afficher -->
+						<background>bonnefinA</background>
+						<text>Vous avez battus le Boss Final ! Vous rentrez au village victorieux avec l’épée et le voleur vaincu.</text>
+						<text>Vous rendez l’épée au Roi, très satisfait, qui en récompense vous nomme chevalier de sa garde royale.</text>
+						<text>Vous avez accomplis votre destiné, et tout est bien qui finit bien.</text>
+						<!-- Mini jeu à lancer -->
+						<game>None</game>
+					</part1>
+
+				</PartA21>
+
+				<PartA22>
+
+					<part1>
+						<!-- Fond à afficher -->
+						<background>MauvaisefinA</background>
+						<text>Le Boss Final était trop puissant pour vous, vous n’avez pas réussi à le battre.</text>
+						<text>Par conséquent vous êtes condamnés, vous et votre partenaire, à être les serviteurs de celui-ci jusqu’à la fin des temps.</text>
+						<text>Peut être n’étiez-vous pas le Héros que nous attendions tant ?</text>
+						<text>Heureusement que nous sommes dans un jeu vidéo et que vous pouvez recommencer la partie pour essayer de gagner !</text>
+						<!-- Mini jeu à lancer -->
+						<game>None</game>
+					</part1>
+
+				</PartA22>
+
+			</PartA2>
+
+		</Gauche>
+
+
+		<Droite>
+			
+			<part1>
+				<!-- Fond à afficher -->
+				<background>prisonA</background>
+				<text>Sous vos pas, une trappe s’ouvre et vous tombez, vous et votre partenaire, dans un cachot. Impossible d’ouvrir la porte, vous êtes prisonniers.</text>
+				<text>Votre situation semble désespérée. Etes-vous vraiment le Héros qui doit sauver le destin de ce monde ?</text>
+				<text>Tandis que vous vous apitoyez sur votre sort, le Roi lui, ne perd pas espoir.</text>
+				<text>« - Ressaisissez-vous !  Nous allons nous en sortir ! »</text>
+				<text>Celui-ci s’approche de la serrure et pose ses mains sur celle-ci. Une lumière éclaire alors les mains du Roi et la porte s’ouvre.</text>
+				<text>« -Désolé de ne pas vous avoir dit avant que je maitrisais la magie. Nous pouvons sortir à présent ! »</text>
+				<text>La magie du scénario semblant être de votre côté, vous reprenez espoir vous dirigez vers la salle du Boss Final.</text>
+				<!-- Mini jeu à lancer -->
+				<game>None</game>
+			</part1>
+
+			<part2>
+				<!-- Fond à afficher -->
+				<background>bossA</background>
+				<text>La salle du Boss était éclairée par des flammes entourant le trône ou était assis le voleur de l’épée.</text>
+				<text>« -Vous avez peut-être réussit à arriver jusqu’à moi mais je ne vous laisserez pas l’épée ».</text>
+				<text>Sa voix était sombre et puissance, vous n’allez pas réussir à le convaincre par le dialogue c’est certain. Votre partenaire fait un pas en avant résolu.</text>
+				<text>« -Nous nous battrons pour la récupérer ! »</text>
+				<text>Le Boss Final ricana, l'air surpris.</text>
+				<text>« -Alors approchez ! »</text>
+				<!-- Mini jeu à lancer -->
+				<game>Simon\Simon.py</game>
+			</part2>
+
+			<PartA11>
+				
+				<part1>
+					<!-- Fond à afficher -->
+					<background>bonnefinA</background>
+					<text>Vous avez battus le Boss Final ! Vous rentrez au village victorieux avec l’épée et le voleur vaincu.</text>
+						<text>Vous rendez l’épée au Roi, très satisfait, qui en récompense vous nomme chevalier de sa garde royale.</text>
+					<text>Vous avez accomplis votre destiné, et tout est bien qui finit bien.</text>
+					<!-- Mini jeu à lancer -->
+					<game>None</game>
+				</part1>
+
+			</PartA11>
+
+			<PartA12>
+				
+				<part1>
+					<!-- Fond à afficher -->
+					<background>MauvaisefinA</background>
+					<text>Le Boss Final était trop puissant pour vous, vous n’avez pas réussi à le battre.</text>
+					<text>Par conséquent vous êtes condamnés, vous et votre partenaire, à être les serviteurs de celui-ci jusqu’à la fin des temps.</text>
+					<text>Peut être n’étiez-vous pas le Héros que nous attendions tant ?</text>
+					<text>Heureusement que nous sommes dans un jeu vidéo et que vous pouvez recommencer la partie pour essayer de gagner ! </text>
+					<!-- Mini jeu à lancer -->
+					<game>None</game>
+				</part1>
+
+			</PartA12>
+
+		</Droite>
+
+	</PartA>
+
+	
+	<PartB>
+		
+		<part1>
+			<!-- Fond à afficher -->
+			<background>Egouts</background>
+			<text>Il semblerait que vous ayez plutôt surestimé vos talents au « pierre feuille ciseaux ». Ayant perdu ce duel, les gardes ne vous laissent pas entrer, mais votre nouvel ami connait un autre chemin.</text>
+			<text>Vous voilà donc dans les souterrains du village. Pas très glorieux comme commencement d’une, soi-disant, épopée épique.</text>
+			<text>Sur votre chemin vous rencontrez un homme portant une couronne sombre et des habits semblable à ceux d’un voleur, votre compagnon frémit.</text>
+			<text>« -C’est le Roi des Catacombes, le plus célèbre des voleur de la région ! Je ne pensais pas qu’on tomberait sur lui. »</text>
+			<text>Le lutin demande alors à celui-ci de vous laisser passer, étant le Héros il vous faut continuer votre chemin pour chercher un moyen de trouver l’antre du Boss Final.</text>
+			<text>A ces mots, le Roi des Catacombes soupir.</text>
+			<text>« -Alors c’est lui qui a volé cette épée ! Tout le monde m’accuse à la surface alors que ce n’est pas moi qui ai fait le coup ! »</text>
+			<text>« -Si vous allez la lui reprendre, je peux vous guider jusqu’à lui et vous aider à la récupérer. Ca prouvera à tout le monde que ce n’est pas moi. »</text>
+			<text>Heureux de ne pas avoir à affronter le voleur seul, vous restez quand même ignorant.</text>
+			<text>Pourquoi cette épée est-elle si importante ?, vous demandez vous.</text>
+			<text>« -Elle est légendaire, n’est-ce pas une raison suffisante ? »</text>
+			<text>Cette remarque du roi qui semblait être une évidence pour lui vous laisse perplexe. Mais il vous faut continuer l’histoire !</text>
+			<!-- Mini jeu à lancer -->
+			<game>None</game>
+		</part1>
+
+		<part2>
+			<!-- Fond à afficher -->
+			<background>Transition_foret3A</background>
+			<text>Une fois que vous avez quitté le village, le Roi vous guide vers l’Antre du Boss Final, qui se trouvait être dans une grotte au fin fond de la foret. Le lutin s’arrête alors.</text>
+			<text>« -Je ne peux pas vous suivre jusqu’au Boss Final, il est trop fort pour moi. »</text>
+			<text>« J’ai rempli ma mission, je compte sur vous maintenant ! »</text>
+			<text>Vous vous étiez attaché à ce petit être, vous acquiescez donc  un peu ému avant de reprendre la route.</text>
+			<text>Il vous faut réussir pour ne pas le décevoir !</text>
+			<!-- Mini jeu à lancer -->
+			<game>None</game>
+		</part2> 
+
+		<part3>
+			<!-- Fond à afficher -->
+			<background>Grotte</background>
+			<text>« -Nous voilà dans son antre ! »</text>
+			<text>En effet après avoir traversé la foret, vous et votre partenaire vous retrouvez dans une grotte sombre.</text>
+			<text>Cependant après avoir un peu avancé, vous vous retrouvez devant deux chemins identiques.</text>
+			<text>« -Par où allons-nous ? »</text>
+			<!-- Mini jeu à lancer -->
+			<game>Choice</game>
+		</part3>
+
+		<!-->Grotte_Choix</!-->
+		
+		<Gauche>
+
+			<part1>
+				<!-- Fond à afficher -->
+				<background>Grotte</background>
+				<text>Vous choisissez d’aller à gauche. Cependant au bout de quelque minute de marche, vous sentez un tremblement.</text>
+				<text>S’en suit une chute de pierres devant et derrière vous.</text>
+				<text>«-Nous sommes bloqués ! C’est sans doute un piège du Boss Final. Nous devons débloquer le passage pour passer.»</text>
+				<!-- Mini jeu à lancer -->
+				<game>Esquive\Esquive.py</game>
+			</part1>
+
+			<PartB1>
+				
+				<part1>
+					<!-- Fond à afficher -->
+					<background>bossB</background>
+					<text>La salle du Boss était éclairée par des flammes entourant le trône ou était assis le voleur de l’épée.</text>
+					<text>« -Vous avez peut-être réussit à arriver jusqu’à moi mais je ne vous laisserez pas l’épée ».</text>
+					<text>Sa voix était sombre et puissance, vous n’allez pas réussir à le convaincre par le dialogue c’est certain. Votre partenaire fait un pas en avant résolu.</text>
+					<text>« -Nous nous battrons pour la récupérer ! »</text>
+					<text>Le Boss Final ricana, l'air surpris.</text>
+					<text>« -Alors approchez ! »</text>
+					<!-- Mini jeu à lancer -->
+					<game>Simon\Simon.py</game>
+				</part1>
+
+				<PartB11>
+
+					<part1>
+						<!-- Fond à afficher -->
+						<background>bonnefinB</background>
+						<text>Vous avez battus le Boss Final ! Vous rentrez au village victorieux avec l’épée et le voleur vaincu.</text>
+						<text>Vous rendez l’épée au Roi, très satisfait, qui en récompense vous nomme chevalier de sa garde royale.</text>
+						<text>Vous avez accomplis votre destiné, et tout est bien qui finit bien.</text>
+						<!-- Mini jeu à lancer -->
+						<game>None</game>
+					</part1>
+
+				</PartB11>
+
+				<PartB12>
+
+					<part1>
+						<!-- Fond à afficher -->
+						<background>MauvaisefinB</background>
+						<text>Le Boss Final était trop puissant pour vous, vous n’avez pas réussi à le battre.</text>
+						<text>Par conséquent vous êtes condamnés, vous et votre partenaire, à être les serviteurs de celui-ci jusqu’à la fin des temps.</text>
+						<text>Peut être n’étiez-vous pas le Héros que nous attendions tant ?</text>
+						<text>Heureusement que nous sommes dans un jeu vidéo et que vous pouvez recommencer la partie pour essayer de gagner !</text>
+						<!-- Mini jeu à lancer -->
+						<game>None</game>
+					</part1>
+
+				</PartB12>
+
+			</PartB1>
+
+			<!--></!-->
+
+			<PartB2>
+
+				<part1>
+					<!-- Fond à afficher -->
+					<background>prisonB</background>
+					<text>Sous vos pas, une trappe s’ouvre et vous tombez, vous et votre partenaire, dans un cachot. Impossible d’ouvrir la porte, vous êtes prisonniers.</text>
+					<text>Votre situation semble désespérée. Etes-vous vraiment le Héros qui doit sauver le destin de ce monde ?</text>
+					<text>Tandis que vous vous apitoyez sur votre sort, le Roi des Catacombes lui, ne perd pas espoir.</text>
+					<text>« - Ressaisissez-vous !  Nous allons nous en sortir ! »</text>
+					<text>Celui-ci s’approche de la serrure, sort une épingle de sa poche et commence à crocheter la serrure. Au bout de quelque seconde la porte s’ouvre.</text>
+					<text>« -Après tout, on ne me surnomme pas le Roi des Voleurs pour rien. Nous pouvons sortir à présent ! »</text>
+					<text>La magie du scénario semblant être de votre côté, vous reprenez espoir vous dirigez vers la salle du Boss Final. </text>
+					<!-- Mini jeu à lancer -->
+					<game>None</game>
+				</part1>
+
+				<part2>
+					<!-- Fond à afficher -->
+					<background>bossB</background>
+					<text>La salle du Boss était éclairée par des flammes entourant le trône ou était assis le voleur de l’épée.</text>
+					<text>« -Vous avez peut-être réussit à arriver jusqu’à moi mais je ne vous laisserez pas l’épée ».</text>
+					<text>Sa voix était sombre et puissance, vous n’allez pas réussir à le convaincre par le dialogue c’est certain. Votre partenaire fait un pas en avant résolu.</text>
+					<text>« -Nous nous battrons pour la récupérer ! »</text>
+					<text>Le Boss Final ricana, l'air surpris.</text>
+					<text>« -Alors approchez ! »</text>
+					<!-- Mini jeu à lancer -->
+					<game>Simon\Simon.py</game>
+				</part2>
+
+				<PartB21>
+
+					<part1>
+						<!-- Fond à afficher -->
+						<background>bonnefinB</background>
+						<text>Vous avez battus le Boss Final ! Vous rentrez au village victorieux avec l’épée et le voleur vaincu.</text>
+						<text>Vous rendez l’épée au Roi, très satisfait, qui en récompense vous nomme chevalier de sa garde royale.</text>
+						<text>Vous avez accomplis votre destiné, et tout est bien qui finit bien.</text>
+						<!-- Mini jeu à lancer -->
+						<game>None</game>
+					</part1>
+
+				</PartB21>
+
+				<PartB22>
+
+					<part1>
+						<!-- Fond à afficher -->
+						<background>MauvaisefinB</background>
+						<text>Le Boss Final était trop puissant pour vous, vous n’avez pas réussi à le battre.</text>
+						<text>Par conséquent vous êtes condamnés, vous et votre partenaire, à être les serviteurs de celui-ci jusqu’à la fin des temps.</text>
+						<text>Peut être n’étiez-vous pas le Héros que nous attendions tant ?</text>
+						<text>Heureusement que nous sommes dans un jeu vidéo et que vous pouvez recommencer la partie pour essayer de gagner !</text>
+						<!-- Mini jeu à lancer -->
+						<game>None</game>
+					</part1>
+
+				</PartB22>
+
+			</PartB2>
+
+		</Gauche>
+
+
+		<Droite>
+			
+			<part1>
+				<!-- Fond à afficher -->
+				<background>prisonB</background>
+				<text>Sous vos pas, une trappe s’ouvre et vous tombez, vous et votre partenaire, dans un cachot. Impossible d’ouvrir la porte, vous êtes prisonniers.</text>
+				<text>Votre situation semble désespérée. Etes-vous vraiment le Héros qui doit sauver le destin de ce monde ?</text>
+				<text>Tandis que vous vous apitoyez sur votre sort, le Roi des Catacombes lui, ne perd pas espoir.</text>
+				<text>« - Ressaisissez-vous !  Nous allons nous en sortir ! »</text>
+				<text>Celui-ci s’approche de la serrure, sort une épingle de sa poche et commence à crocheter la serrure. Au bout de quelque seconde la porte s’ouvre.</text>
+				<text>« -Après tout, on ne me surnomme pas le Roi des Voleurs pour rien. Nous pouvons sortir à présent ! »</text>
+				<text>La magie du scénario semblant être de votre côté, vous reprenez espoir vous dirigez vers la salle du Boss Final. </text>
+				<!-- Mini jeu à lancer -->
+				<game>None</game>
+			</part1>
+
+			<part2>
+				<!-- Fond à afficher -->
+				<background>bossB</background>
+				<text>La salle du Boss était éclairée par des flammes entourant le trône ou était assis le voleur de l’épée.</text>
+				<text>« -Vous avez peut-être réussit à arriver jusqu’à moi mais je ne vous laisserez pas l’épée ».</text>
+				<text>Sa voix était sombre et puissance, vous n’allez pas réussir à le convaincre par le dialogue c’est certain. Votre partenaire fait un pas en avant résolu.</text>
+				<text>« -Nous nous battrons pour la récupérer ! »</text>
+				<text>Le Boss Final ricana, l'air surpris.</text>
+				<text>« -Alors approchez ! »</text>
+				<!-- Mini jeu à lancer -->
+				<game>Simon\Simon.py</game>
+			</part2>
+
+			<PartB11>
+
+				<part1>
+					<!-- Fond à afficher -->
+					<background>bonnefinB</background>
+					<text>Vous avez battus le Boss Final ! Vous rentrez au village victorieux avec l’épée et le voleur vaincu.</text>
+					<text>Vous rendez l’épée au Roi, très satisfait, qui en récompense vous nomme chevalier de sa garde royale.</text>
+					<text>Vous avez accomplis votre destiné, et tout est bien qui finit bien.</text>
+					<!-- Mini jeu à lancer -->
+					<game>None</game>
+				</part1>
+
+			</PartB11>
+
+			<PartB12>
+
+				<part1>
+					<!-- Fond à afficher -->
+					<background>MauvaisefinB</background>
+					<text>Le Boss Final était trop puissant pour vous, vous n’avez pas réussi à le battre.</text>
+					<text>Par conséquent vous êtes condamnés, vous et votre partenaire, à être les serviteurs de celui-ci jusqu’à la fin des temps.</text>
+					<text>Peut être n’étiez-vous pas le Héros que nous attendions tant ?</text>
+					<text>Heureusement que nous sommes dans un jeu vidéo et que vous pouvez recommencer la partie pour essayer de gagner ! </text>
+					<!-- Mini jeu à lancer -->
+					<game>None</game>
+				</part1>
+
+			</PartB12>
+
+		</Droite>
+
+	</PartB>
+
+</Main>
